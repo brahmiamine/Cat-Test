@@ -15,6 +15,17 @@ services:
     depends_on:
       - db
     restart: on-failure  # Automatically restart on failure
+
+  front:
+      build:
+        context: ./front
+        dockerfile: Dockerfile
+      ports:
+        - "4000:4000" # Expose frontend on port 4000
+      depends_on:
+        - backend
+      restart: on-failure
+    
   db:
     image: postgres:15
     environment:
