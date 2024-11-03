@@ -1,0 +1,53 @@
+.ranking {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.catImage {
+  background-color: #ddd;
+  width: 100px;
+  height: 100px;
+  margin-top: 31px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+}
+
+.gridItem {
+  text-align: center;
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.gridItem .rankNumber {
+  font-size: 1.2em;
+  background-color: #fff;
+  color: #001f3f;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.catsContainer {
+  margin-top: 100px;
+}
+
+.score {
+  color: black;
+}

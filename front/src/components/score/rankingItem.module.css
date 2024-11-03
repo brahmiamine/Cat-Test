@@ -1,0 +1,54 @@
+.rankingItem {
+  text-align: center;
+  background-color: #2b3a42;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  position: relative;
+  transition: transform 0.3s;
+}
+
+.first {
+  background-color: #001f3f;
+  width: 35%;
+  transform: translateY(-30px);
+  z-index: 1;
+  padding: 30px;
+}
+
+.second {
+  background-color: #2d3e50;
+  width: 30%;
+  transform: translateY(10px);
+  padding: 30px;
+}
+
+.third {
+  background-color: #2d3e50;
+  width: 30%;
+  transform: translateY(10px);
+  padding: 30px;
+}
+
+.rankNumber {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  background-color: #fff;
+  color: #001f3f;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.catImage {
+  background-color: #ddd;
+  width: 100px;
+  height: 100px;
+  margin-top: 31px;
+}
