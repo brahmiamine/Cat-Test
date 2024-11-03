@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 import FingerprintJS from "@fingerprintjs/fingerprintjs";
 import styles from "./vote.module.css";
-import { fetchCats, voteForCat, Cat } from "../../services/catService";
+import { fetchCats, voteForCat, Cat } from "../../services/CatService";
 import RankingPopup from "../../components/RankingPopup";
 import CatCard from "../../components/vote/CatCard";
 import { useRouter } from "next/navigation";

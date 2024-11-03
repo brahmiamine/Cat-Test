@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import styles from "./catCard.module.css";
-import { Cat } from "../../services/catService";
+import { Cat } from "../../services/CatService";
 import LikeButton from "../ui/LikeButton";
 
 interface CatCardProps {

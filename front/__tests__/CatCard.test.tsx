@@ -1,7 +1,7 @@
 import React from "react";
 import { render, screen, fireEvent } from "@testing-library/react";
 import CatCard from "../src/components/vote/CatCard";
-import { Cat } from "../src/services/catService";
+import { Cat } from "../src/services/CatService";
 
 describe("CatCard Component", () => {
   const mockCat: Cat = {

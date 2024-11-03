@@ -1,7 +1,7 @@
 import React from "react";
 import { render, screen } from "@testing-library/react";
 import RankingItem from "../src/components/score/RankingItem";
-import { Cat } from "../src/services/catService";
+import { Cat } from "../src/services/CatService";
 
 describe("RankingItem Component", () => {
   const mockCat: Cat = {

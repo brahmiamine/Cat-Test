@@ -2,7 +2,7 @@ import React from "react";
 import { render, screen, waitFor } from "@testing-library/react";
 import ScoresPage from "../src/app/score/page";
 import { fetchCatScores } from "../src/services/VoteService";
-import { Cat } from "../src/services/catService";
+import { Cat } from "../src/services/CatService";
 
 // Mock de la fonction fetchCatScores
 jest.mock("../src/services/VoteService", () => ({

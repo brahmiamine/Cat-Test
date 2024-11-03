@@ -1,11 +1,11 @@
 import React from "react";
 import { render, screen, fireEvent, waitFor } from "@testing-library/react";
 import VotePage from "../src/app/vote/page";
-import { fetchCats, voteForCat } from "../src/services/catService";
-import { Cat } from "../src/services/catService";
+import { fetchCats, voteForCat } from "../src/services/CatService";
+import { Cat } from "../src/services/CatService";
 
 // Mock des fonctions pour simuler les appels API
-jest.mock("../src/services/catService");
+jest.mock("../src/services/CatService");
 
 describe("VotePage Component", () => {
   const mockCats: Cat[] = [
