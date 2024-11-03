@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import styles from "./CatCard.module.css";
+import styles from "./catCard.module.css";
 import { Cat } from "../../services/catService";
 import LikeButton from "../ui/LikeButton";
 

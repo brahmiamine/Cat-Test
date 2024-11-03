@@ -5,8 +5,10 @@ import styles from "./vote.module.css";
 import { fetchCats, voteForCat, Cat } from "../../services/catService";
 import RankingPopup from "../../components/RankingPopup";
 import CatCard from "../../components/vote/CatCard";
+import { useRouter } from "next/navigation";
 
 const VotePage: React.FC = () => {
+  const router = useRouter();
   const [cats, setCats] = useState<Cat[]>([]);
   const [currentCats, setCurrentCats] = useState<{ left: Cat; right: Cat } | null>(null);
   const [voterId, setVoterId] = useState<string | null>(null);
@@ -59,7 +61,7 @@ const VotePage: React.FC = () => {
         }
         setCurrentIndex(newIndex);
       } else {
-        alert("Tous les chats ont été affichés et enregistrés !");
+        router.push("/dashboard");
       }
     } catch (error) {
       console.error("Error voting for cat:", error);

@@ -1,4 +1,5 @@
 const apiUrl = process.env.NEXT_PUBLIC_API_URL;
+//const apiUrl = "http://54.91.105.247"
 
 export type Cat = {
     id: number;
